@@ -1,0 +1,47 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list {
+  list-style-type: none;
+  border: 3px solid #151515;
+  padding: 0;
+  margin: 10px;
+  width: 20%;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.list li:nth-child(odd) {
+  background-color: white;
+}
+
+.list li:nth-child(even) {
+  background-color: gray;
+}
+
+#score-form input,
+#score-form button {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: block;
+  margin-left: 27rem;
+  margin-top: -14rem;
+}
+
+#score-form button {
+  border: 2px solid #000;
+  margin-left: 9rem;
+}
+
+#score-form input {
+  border: 2px solid #000;
+}
