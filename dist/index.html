@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Leaderboard</title>
-      <link rel="stylesheet" href="style.css"> 
-    <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<html lang="en">
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+
+<body>
+    <header>
         <h1>Leaderboard</h1>
-        <div class="header-container">
-        <h2>Recent scores</h2><button>Refresh</button>
-    </div>
-    <div class="list-container">
-    <ul class="list">
-        <li>Name: <span class="score">100</span></li>
-        <li>Name: <span class="score">20</span></li>
-        <li>Name: <span class="score">50</span></li>
-        <li>Name: <span class="score">78</span></li>
-        <li>Name: <span class="score">125</span></li>
-        <li>Name: <span class="score">77</span></li>
-        <li>Name: <span class="score">42</span></li>
-    </ul>
-    <div class="form-container">
-        <h2>Add your scores</h2>
-        <form id="score-form"> 
-            <input type="text" id="name-input" placeholder="Your name" required><br><br>
-            <input type="number" id="score-input" placeholder="Your score" required><br><br>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</div>
+    </header>
+    <main class="main">
+        <div class="recent-scores">
+            <div class="rc-header">
+                <h2>Recent scores <input class="button" type="submit" value="Refresh"></h2>
+            </div>
+            <table class="table border">
+                <tr>
+                    <td>No scores available</td>
+                </tr>
+            </table>
+        </div>
 
-    </body>
+        <div class="add-score">
+            <div class="ad-header">
+                <h2>Add your score</h2>
+            </div>
+            <form action="/" class="score-form">
+                <input type="text" id="user_name" class="border" name="name" placeholder="Your name"><br>
+                <input type="text" id="user_score" class="border" name="score" placeholder="Your score"><br><br>
+                <input class="button submit-b" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <script src="/src/index.js"></script>
+</body>
+
 </html>
